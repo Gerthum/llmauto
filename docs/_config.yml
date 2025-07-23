@@ -3,9 +3,7 @@ title: llmauto
 description: Bookmark this to keep an eye on my project updates!
 
 # Blog configuration
-permalink: /:categories/:year/:month/:day/:title/
-paginate: 5
-paginate_path: "/page:num/"
+permalink: /:year/:month/:day/:title/
 
 # Optional: Add navigation
 plugins:
@@ -17,9 +15,3 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-
-# Collections for organizing content
-collections:
-  posts:
-    output: true
-    permalink: /:collection/:name/

@@ -1,5 +1,7 @@
 # llmauto
 
+{% include navigation.html %}
+
 Welcome to my project updates and blog!
 
 ## About llmauto
@@ -12,7 +14,7 @@ This is a repository for [brief description of your project].
 - [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
-[View all posts →](/blog.html)
+[View all posts →](/blog/)
 
 ## Features
 

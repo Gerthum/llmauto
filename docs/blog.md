@@ -1,9 +1,12 @@
 ---
 layout: default
 title: Blog
+permalink: /blog/
 ---
 
 # Blog Posts
+
+{% include navigation.html %}
 
 {% for post in site.posts %}
 ## [{{ post.title }}]({{ post.url }})
