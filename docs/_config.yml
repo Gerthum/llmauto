@@ -1,3 +1,12 @@
 theme: jekyll-theme-minimal
-title: Octocat's homepage
+title: llmauto
 description: Bookmark this to keep an eye on my project updates!
+
+# Optional: Add navigation
+plugins:
+  - jekyll-relative-links
+
+# Enable relative links processing
+relative_links:
+  enabled: true
+  collections: true
