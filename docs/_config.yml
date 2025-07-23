@@ -2,11 +2,24 @@ theme: jekyll-theme-minimal
 title: llmauto
 description: Bookmark this to keep an eye on my project updates!
 
+# Blog configuration
+permalink: /:categories/:year/:month/:day/:title/
+paginate: 5
+paginate_path: "/page:num/"
+
 # Optional: Add navigation
 plugins:
   - jekyll-relative-links
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Enable relative links processing
 relative_links:
   enabled: true
   collections: true
+
+# Collections for organizing content
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name/

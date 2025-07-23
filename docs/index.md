@@ -1,10 +1,18 @@
-# Octocat's Homepage
+# llmauto
 
-Welcome to my project updates page!
+Welcome to my project updates and blog!
 
 ## About llmauto
 
 This is a repository for [brief description of your project].
+
+## Latest Blog Posts
+
+{% for post in site.posts limit:3 %}
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+{% endfor %}
+
+[View all posts →](/blog.html)
 
 ## Features
 
@@ -15,10 +23,6 @@ This is a repository for [brief description of your project].
 ## Getting Started
 
 [Add instructions on how to use your project]
-
-## Updates
-
-Keep an eye on this space for project updates!
 
 ---
 
